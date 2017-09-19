@@ -1,0 +1,33 @@
+
+.photo {
+	width:		100%;
+	margin:		0;
+	padding:	0;
+	position:	relative; /* 相対位置指定 */
+}
+
+.photo img {
+	width:		100%;
+}
+
+.text {
+	width:		100%;
+	font-size:	150%;
+	text-align:	center;
+	bottom:		150px;
+	margin:		0;
+	padding:	0;
+	color:		#fff;
+	background:	rgba(0,0,0,0.4); /* 帯の透明度 */
+	position:	absolute; /* 絶対位置指定 */
+}
+table{
+	border: 1cm;
+}
+main{
+	border: 5px solid;
+}
+footer{
+	margin: 60px;
+	position:	relative;
+}
