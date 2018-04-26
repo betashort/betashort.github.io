@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BMI検査</title>
+  <script>
+  function check(){
+    var w = document.getElementById("weight").value;
+    var h = document.getElementById("height").value;
+
+    bmi = w / (h**2);
+
+    document.getElementById("result").textContent = bmi;
+
+    if (bmi < 18.5){
+      var text = "痩せすぎです。";
+    }else if (bmi < 25){
+      var text = "普通です。維持しましょう！";
+    }else if (bmi < 30){
+      var text = "肥満(レベル1)です。もう少し痩せましょう！";
+    }else if (bmi < 35){
+      var text = "肥満(レベル2)です。少し痩せましょう！";
+    }else if (bmi < 40){
+      var text = "肥満(レベル3)です。痩せましょう！";
+    }else if (bmi <45){
+      var text = "肥満(レベル4)です。手遅れかもしれませんね。ファイト！";
+    }else{
+      var text = "あなたは、人間ではありません！"
+    }
+    document.getElementById("coment").textContent = text;
+  }
+</script>
+</head>
+<body>
+  <header>
+    <a href = "../web_HTML/web_js.html">前のページに戻る</a>
+  </header>
+  <main>
+    <h1>BMI検査会場</h1>
+    <p>BMIを測定します。以下の記入欄に体重[kg]と、身長[m]を記入してください。</p>
+    体重:<input id = "weight" value = "54">kg<br>
+    身長:<input id = "height" value = "1.7">m<br>
+    <button onclick= "check()">診断</button>
+    <h2>結果発表</h2>
+    あなたのBMIは、<span id = "result"></span><br>
+    あなたは、<span id = "coment"></span>
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>
