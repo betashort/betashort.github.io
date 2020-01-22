@@ -19,7 +19,28 @@ img {
 /*ヘッダー終了*/
 
 /*メイン*/
+#profile h2{
+  border-bottom: 5px solid #87cefa;
+  border-left: 10px solid #87cefa;
+}
+#profile-img{
+  float: left;
+  width:30%;
+}
 
+#profile-comment{
+  float: right;
+  padding-left: 3rem;
+  width: 70%;
+}
+
+#profile:after{
+  content: "";
+  display: block;
+  clear: both;
+  margin-bottom: 5rem;
+}
+/**/
 #betashort-lab h2{
   border-bottom: 5px solid #87cefa;
   border-left: 10px solid #87cefa;
