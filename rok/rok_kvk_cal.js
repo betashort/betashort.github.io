@@ -14,6 +14,8 @@ function calc_norma(){
     }
     document.getElementById("T5_kill").textContent = "？？"
     document.getElementById("T5_death").textContent ="？？"
+    document.getElementById("T4_kill").textContent = "？？"
+    document.getElementById("T4_death").textContent ="？？"
 }
 
 function simulate(){
@@ -21,6 +23,8 @@ function simulate(){
     let T5_death = norma / 200
     document.getElementById("T5_kill").textContent = trans_junit(T5_kill)
     document.getElementById("T5_death").textContent = trans_junit(T5_death)
+    document.getElementById("T4_kill").textContent = trans_junit(T5_kill*2)
+    document.getElementById("T4_death").textContent = trans_junit(T5_death*2)
 }
 
 function trans_junit(a){
