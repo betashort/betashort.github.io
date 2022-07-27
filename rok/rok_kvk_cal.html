@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>rok kvk calculater</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./rok_kvk_cal.css">
+        <!-- javascript-->
+        <script src="./rok_kvk_cal.js"></script>
+    </head>
+    <body>
+        <h2>戦力情報</h2>
+        <div>
+            あなたの戦力:<input id="power" type="number" value=80000000 onkeydown="calc_norma()">
+            <button onclick="calc_norma()">計算</button>
+        </div>
+        <h2>ノルマ</h2>
+        <div>
+            あなたのノルマ:<span id="norma_point"></span>
+        </div>
+        <h2>シミュレーション</h2>
+        <p>※万単位以下切り上げ</p>
+        <div>
+            <button onclick="simulate()">シミュレーション</button>
+        </div>
+
+        <div>
+            <h3>撃破数で換算すると</h3>
+            T5の撃破数: <span id="T5_kill">？？</span>
+        </div>
+
+        <div>
+            <h3>戦死数で換算すると</h3>
+            T5の戦死: <span id="T5_death">？？</span>
+        </div>
+
+
+    </body>
+</html>
