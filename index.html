@@ -6,12 +6,22 @@
   <title>PortFolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!--Boostrap-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <!--CSSファイル-->
-  <link rel="stylesheet" href="portfolio.css"> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <!--CSS ファイル-->
+  <link rel="stylesheet" href="portfolio.css">
+  <!-- javascript-->
+  <script src="./calc_age.js"></script>
+
 </head>
 
 <body>
@@ -20,7 +30,8 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#"><i class="far fa-image mr-1"></i>βshort PortFolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,49 +51,50 @@
     </nav>
   </header>
 
-  <!-- メイン　-->
+  <!-- メイン　-->
   <main class="container">
     <div class="jumbotron">
-      <h1 class="text-center"><i class="fas fa-camera-retro"></i>βshortのPortFolio</h1>
+      <h1 class="text-center"><i class="fas fa-camera-retro"></i>βshortのPortFolio</h1>
       <p class="text-center"></p>
     </div>
 
     <div id="profile">
-      <h2>Profile</h2>
+      <h2>Profile</h2>
       <div id="profile-img">
         <img src="./img/profile_img.JPG">
       </div>
-      <div id ="profile-comment">
+      <div id="profile-comment">
         <h3>About</h3>
         <ul>
           <li>名前 βshort</li>
-          <li>1996年生まれ  23歳</li>
+          <li><span id="birth_year">1996</span>年生まれ <span id="age"></span></li>
         </ul>
       </div>
     </div>
 
     <!-- コンテンツ2-->
     <div id="betashort-lab">
-      <h2>βshort Lab </h2>
+      <h2>βshort Lab </h2>
       <p>WordPressdeでブログ設立</p>
       <div id="blog-img">
         <a href="http://betashort-lab.com"><img src="./img/titke-2.png"></a>
       </div>
       <div id="blog-comment">
-        <p>WordPressを利用して、ブログを設立しました。<br> 学習したことのアウトプットをメインとした、まとめノートです。
+        <p>WordPressを利用して、ブログを設立しました。<br> 学習したことのアウトプットをメインとした、まとめノートです。
           <br> また、アフィリエイト等を利用し、少ないながらも収益を得ています。
-          <a href="http://betashort-lab.com">βshort Lab</a></p>
+          <a href="http://betashort-lab.com">βshort Lab</a>
+        </p>
       </div>
     </div>
 
     <!-- コンテンツ2 -->
     <div id="galary">
-      <h2>Work</h2>
+      <h2>Work</h2>
       <div class="row no-gutters">
         <div class="col-lg-3 col-sm-6 mb-3">
           <div class="img-thumbnail">
             <h3>Speak</h3>
-            <a href="https://speakerdeck.com/betashort"><img src="./img/presentation_pc_man2.png"></a>
+            <a href="https://speakerdeck.com/betashort"><img src="./img/presentation_pc_man2.png"></a>
           </div>
         </div>
         <div class="col-lg-3 col-sm-6 mb-3">
@@ -101,8 +113,8 @@
           <div class="img-thumbnail">
             <h3>SIGNATE</h3>
             <a href="https://signate.jp/users/27361/history"><img src="./img/ai_vs_ai_fight.png"></a>
-      </div>
-    </div>
+          </div>
+        </div>
 
 
   </main>
